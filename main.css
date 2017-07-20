@@ -14,39 +14,39 @@ light tan: #eeebda
 body{
     font-family: 'Noto Serif', serif;
     line-height: 1.8;
-    margin: 0;
     background-color: #eeebda;
+    display: flex;
+    flex-direction: column;
 }
+
 h1, h2, h3{
     font-family: "Josefin Sans", sans-serif;
     margin-top: 0;
 }
+
 img{
     max-width: 100%;
     padding: 0;
     margin: 0;
     display: block;
 }
+
 .wrapper{
     width: 1000px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 30px;
-    justify-content:center;
-
-    /*
-        TODO:
-        - Center up the page
-        - Create a flexbox containerer for
-        the major page sections
-    */
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 #site-header{
     display: flex;
     flex-wrap: wrap;
     width: 1000px;
-
 }
+
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
@@ -56,22 +56,25 @@ img{
     background-size: cover;
     background-position: right bottom;
 }
+
 #site-header div h1,
 #site-header div h3{
     margin: 0;
     line-height: 1;
     position: relative;
 }
+
 #site-header div h1{
     top: 20px;
 }
+
 #site-header div h3{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
     font-family: 'Dancing Script', cursive;
-
 }
+
 #main-navigation{
     background: #444;
     display: flex;
@@ -79,18 +82,21 @@ img{
     width: 1000px;
     justify-content: flex-end;
 }
+
 #main-navigation a{
     display: block;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
+    flex-grow: 1;
 }
 
 #main-navigation #logo{
     margin-right: 400px;
     flex-grow: 2;
 }
+
 main{
     padding: 20px;
     background-color: #444;
@@ -99,8 +105,8 @@ main{
     z-index: 1;
     position: relative;
     bottom: 50px;
-
 }
+
 aside{
     padding: 20px;
     background-color: #eee;
@@ -121,13 +127,14 @@ aside img{
     margin-bottom: 30px;
     border: 2px solid white;
 }
+
 article{
     background-color: white;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     padding: 20px;
     margin-bottom: 20px;
-
 }
+
 article h2{
     line-height: 1em;
     font-weight: bold;
@@ -137,6 +144,7 @@ article h2{
     border-bottom: 1px solid #ccc;
     text-transform: uppercase;
 }
+
 article time{
     font-size: 0.8em;
     text-align: center;
@@ -144,12 +152,13 @@ article time{
     margin-bottom: 30px;
     color: #666;
 }
+
 article img{
     float: right;
     height: 170px;
     width:230px;
-
 }
+
 article footer p{
   border-top: 1px solid #ccc;
   font-size: 1em;
@@ -158,14 +167,18 @@ article footer p{
   margin: 5px 0;
   padding: 20px 0 0 0;
   color: #666;
-
 }
-#site-footer{
 
+#site-footer{
     background: #333;
     width: 1000px;
     color: #eeebda;
-    text-align:center;
-    margin: 0 30px;
-
+    display:flex;
+    align-content: flex-end;
+    justify-content: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom:0;
 }
