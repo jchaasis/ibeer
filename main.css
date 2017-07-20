@@ -17,6 +17,8 @@ body{
     background-color: #eeebda;
     display: flex;
     flex-direction: column;
+    margin-top:0;
+    margin-bottom: 0;
 }
 
 h1, h2, h3{
